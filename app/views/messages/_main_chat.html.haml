@@ -1,0 +1,37 @@
+.main-chat
+  .main-chat__group
+    .main-chat__group__info
+      %p.main-chat__group__info__name
+        test
+      %P.main-chat__group__info__members
+        Member : kz-oita
+
+    = link_to "#", class: "link-btn" do
+      .main-chat__group__edit-btn
+        Edit
+
+  .main-chat__message-list
+    .main-chat__message-list__info
+      %p.main-chat__message-list__info__name
+        kz-oita
+      %p.main-chat__message-list__info__date
+        2020/01/17(Fri)10:23
+    %p.main-chat__message-list__text
+      こんにちは
+
+    .main-chat__message-list__info
+      %p.main-chat__message-list__info__name
+        mickey
+      %p.main-chat__message-list__info__date
+        2020/01/17(Fri)10:26
+    %p.main-chat__message-list__text
+      hello
+
+  .main-chat__message
+    %form.main-chat__message__box
+      .input-box
+        %input{type: "text",class: "input-box__text",placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", value: "SEND", class: "submit-btn"}
