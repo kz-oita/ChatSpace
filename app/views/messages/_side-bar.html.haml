@@ -1,0 +1,27 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__user-name__contents
+      %p.side-bar__user-name__contents__name
+        = current_user.name
+      %ul.side-bar__user-name__contents__icon
+        %li.side-bar__user-name__contents__icon__new-groups
+        = link_to "#", class: "contents__btn" do
+          = icon('fas', 'pen-square')
+        %li.side-bar__user-name__contents__icon__edit-user
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog', class: 'icon')
+
+  .side-bar__group-list
+    = link_to "#", class: "group-list-text" do
+      .side-bar__group-list__contents
+        %p.side-bar__group-list__contents__name
+          test
+        %p.side-bar__group-list__contents__message
+          hello
+
+    = link_to "#", class: "group-list-text" do
+      .side-bar__group-list__contents
+        %p.side-bar__group-list__contents__name
+          test2
+        %p.side-bar__group-list__contents__message
+          good morning
