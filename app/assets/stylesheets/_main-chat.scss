@@ -44,7 +44,7 @@
     &__info {
       display: flex;
       margin-bottom: 10px;
-      %__name {
+      &__name {
         font-size: 16px;
         color: #333333;
       }
@@ -85,7 +85,6 @@
             display: none;
           }
         }
-        
       }
       .submit-btn {
         width: 100px;
