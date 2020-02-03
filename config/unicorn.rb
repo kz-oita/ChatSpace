@@ -2,6 +2,7 @@ app_path = File.expand_path('../../', __FILE__)
 
 worker_processes 1
 
+working_directry app_path
 
 pid "#{app_path}/tmp/pids/unicorn.pid"
 
