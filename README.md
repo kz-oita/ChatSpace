@@ -1,3 +1,33 @@
+# アプリ名
+## ChatSpace
+(http://18.178.142.247/)
+
+# テストアカウント
+メールアドレス  : test@gmail.com
+
+パスワード      : 11111111
+
+# 概要
+メッセージアプリ（プログラミングスクールの課題）
+
+# 機能
+- ユーザー登録/編集
+- グループ作成/編集
+- メーッセージ送信（非同期通信）
+- 画像送信（非同期通信）
+
+# 開発環境
+- haml
+- sass
+- ruby on rails
+- jquery
+- AWS
+- Nginx
+- Capistrano
+- mysql
+- guthub
+
+
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
